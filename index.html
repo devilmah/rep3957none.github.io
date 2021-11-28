@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Форма</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="button">
+        <div class="button_content">
+             <a href="#popup" class="popup-link"><h1>Форма</h1></a>
+        </div>
+    </div>
+    
+    <div id="popup" class="popup">
+        <div class="popup_body">
+            <div id="popup_content" class="popup_content">
+                <h1>Форма</h1>
+                <h5>Введите свои данные </h5>
+                <form id="form" action="/">
+                    
+                    <div class="row">
+                        <label class="sr-only" for="inlineFormInput">Имя</label>
+                        <div class="col">
+                            <input type="text" class="form-control _req" name="name" placeholder="Полное имя">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control _req" name="lastName" placeholder="Фамилия">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email адрес</label>
+                        <input type="email" class="form-control email _req" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            name="email" placeholder="example@gmail.com">
+                        <small id="emailHelp" class="form-text text-muted">Мы отправим вам письмо с подтверждением.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Биография</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="bio" placeholder="Расскажите о себе"></textarea>
+                    </div>
+                    
+                    <div class="form-check checkbox">
+                        <input type="checkbox" class="form-check-input _req" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1" style="margin:0">
+                            C <a href="https://www.gazprom.ru/about/legal/policy-personal-data/">
+                                политикой обработки персональных данных</a> ознакомлен
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary ">Отправить</button>
+                </form>
+                <a href="#button" class="popup_close close-popup">x</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
