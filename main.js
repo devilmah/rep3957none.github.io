@@ -131,7 +131,7 @@ document.addEventListener('keydown', function (event) //закрытие при 
 
 async function formSend(event)
 {
-   /* event.preventDefault();*/
+    event.preventDefault();
     let error = formValidate(form);
     let formData=new FormData(form);
 
