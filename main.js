@@ -152,7 +152,7 @@ async function formSend(event)
         }else
         {
             popup_content.classList.remove('_sending');
-            alert("Ошибка отправки формы");
+            alert("Отправка формы");
         }
     }
 }
