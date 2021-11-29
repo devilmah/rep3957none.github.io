@@ -11,7 +11,7 @@ $mail->setLanguage('ru','phpmailer/language/');
 $mail->IsHTML(true);
 
 $mail->setFrom('submission@form_receiver.com', 'Сервер форм');
-$mail->addAddress('joe@example.net', 'Devil Mahiru');
+$mail->addAddress('devilmahnew@gmail.com', 'Devil Mahiru');
 $mail->Subject = 'Новая форма';
 
 $body='<h1>С вашего сайта была отправлена форма</h1>';
